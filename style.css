@@ -1,0 +1,113 @@
+/* Globales Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 12px;
+    margin: 5px;
+    width: 320px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button i {
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#content, #trash, #archive {
+    width: 320px;
+    padding: 20px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.divContent {
+    padding: 15px; 
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+    background-color: #e9ecef;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    transition: background-color 0.3s ease; 
+    text-align: center;
+}
+
+.divBtn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.divContent:hover {
+    background-color: #fff;
+}
+
+.divContent strong {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px; 
+}
+
+.note-text {
+    font-size: 14px;
+    color: #555;
+}
+
+h3 {
+    margin: 0 0 15px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+@media (max-width: 380px) {
+    input[type="text"] {
+        width: 80%; 
+    }
+
+    #content, #trash, #archive {
+        width: 80%; 
+        padding: 10px;
+    }
+
+    .divContent {
+        padding: 10px; 
+        font-size: 14px; 
+    }
+
+    .divBtn {
+        gap: 5px; 
+    }
+}
+

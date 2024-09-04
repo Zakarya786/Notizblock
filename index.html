@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notizblock</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="icon" href="./img/icon-1970472_1280.png">
+    <script src="./script/template.js" defer></script>
+    <script src="note.js"></script> 
+</head>
+<body onload="renderNotes()">
+    <h1>Notizblock</h1>
+    <!-- Eingabefelder -->
+    <input id="contentTitle" type="text" placeholder="Titel eingeben">
+    <input id="inputContent" type="text" placeholder="Notiz eingeben">
+    <button onclick="addNote()"><i class="fas fa-save"></i>Speichern</button>
+    
+    <!-- aktive Notizen -->
+    <div id="content">
+        <h3>Notizen</h3>
+    </div>
+    
+    <!-- gelöschte Notizen -->
+    <div id="trash">
+        <h3>Papierkorb</h3>
+    </div>
+    
+    <!-- gelesene Notizen -->
+    <div id="archive">
+        <h3>Archiv</h3>
+    </div>
+</body>
+</html>
